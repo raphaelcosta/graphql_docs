@@ -1,0 +1,2642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="CreateTableFieldInput GraphQL documentation">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>CreateTableFieldInput</title>
+    <link rel="stylesheet" href="/graphql_docs/assets/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+    <script>
+
+    // Add anchors on DOMContentLoaded
+    document.addEventListener("DOMContentLoaded", function(event) {
+      anchors.options = {
+        placement: 'left',
+        visible: 'hover',
+        icon: '¶'
+      };
+      anchors.add('h2, h3, h4, h5, h6, .anchored');
+    });
+
+    </script>
+  </head>
+  <body>
+
+    <div id="wrap">
+      <div id="header">
+      </div>
+      <div id="sidebar">
+        <ul class="categories">
+  <li>
+    <ul class="menu-root">
+      <li>
+        <a href="/graphql_docs">GraphQL Reference</a>
+    </ul>
+  </li>
+
+  <li>
+    <p>Queries</p>
+    <ul class="menu-root">
+      <li>
+        <a href="/graphql_docs/operation/query/" class="sidebar-link">
+          Query
+        </a>
+      </li>
+      <li>
+        <a href="/graphql_docs/operation/mutation/" class="sidebar-link">
+          Mutation
+        </a>
+      </li>
+    </ul>
+  </li>
+
+  <li>
+    <p><a href="/graphql_docs/object">Objects</a></p>
+    <ul class="menu-root">
+      
+        
+      <li>
+        <a href="/graphql_docs/object/assigneefield/" class="sidebar-link">
+          AssigneeField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/attachmentfield/" class="sidebar-link">
+          AttachmentField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/autofillfieldcollection/" class="sidebar-link">
+          AutoFillFieldCollection
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/autofillfieldstring/" class="sidebar-link">
+          AutoFillFieldString
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/card/" class="sidebar-link">
+          Card
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/cardassignee/" class="sidebar-link">
+          CardAssignee
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/cardconnection/" class="sidebar-link">
+          CardConnection
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/cardedge/" class="sidebar-link">
+          CardEdge
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/cardexpiration/" class="sidebar-link">
+          CardExpiration
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/cardfield/" class="sidebar-link">
+          CardField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/cardform/" class="sidebar-link">
+          CardForm
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/cardrelation/" class="sidebar-link">
+          CardRelation
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/cardrelationship/" class="sidebar-link">
+          CardRelationship
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/cardsimportation/" class="sidebar-link">
+          CardsImportation
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/cardsimporterpayload/" class="sidebar-link">
+          CardsImporterPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/checklisthorizontalfield/" class="sidebar-link">
+          ChecklistHorizontalField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/checklistverticalfield/" class="sidebar-link">
+          ChecklistVerticalField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/clonepipespayload/" class="sidebar-link">
+          ClonePipesPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/cnpjfield/" class="sidebar-link">
+          CnpjField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/comment/" class="sidebar-link">
+          Comment
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/condition/" class="sidebar-link">
+          Condition
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/conditionexpression/" class="sidebar-link">
+          ConditionExpression
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/conditionalfield/" class="sidebar-link">
+          ConditionalField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/connectorfield/" class="sidebar-link">
+          ConnectorField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/cpffield/" class="sidebar-link">
+          CpfField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/createcardpayload/" class="sidebar-link">
+          CreateCardPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/createcardrelationpayload/" class="sidebar-link">
+          CreateCardRelationPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/createcommentpayload/" class="sidebar-link">
+          CreateCommentPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/createinboxemailpayload/" class="sidebar-link">
+          CreateInboxEmailPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/createlabelpayload/" class="sidebar-link">
+          CreateLabelPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/createorganizationpayload/" class="sidebar-link">
+          CreateOrganizationPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/createphasefieldpayload/" class="sidebar-link">
+          CreatePhaseFieldPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/createphasepayload/" class="sidebar-link">
+          CreatePhasePayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/createpipepayload/" class="sidebar-link">
+          CreatePipePayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/createpiperelationpayload/" class="sidebar-link">
+          CreatePipeRelationPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/createpresignedurlpayload/" class="sidebar-link">
+          CreatePresignedUrlPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/createtablefieldpayload/" class="sidebar-link">
+          CreateTableFieldPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/createtablepayload/" class="sidebar-link">
+          CreateTablePayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/createtablerecordinrestrictedtablepayload/" class="sidebar-link">
+          CreateTableRecordInRestrictedTablePayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/createtablerecordpayload/" class="sidebar-link">
+          CreateTableRecordPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/createtablerelationpayload/" class="sidebar-link">
+          CreateTableRelationPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/createwebhookpayload/" class="sidebar-link">
+          CreateWebhookPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/currencyfield/" class="sidebar-link">
+          CurrencyField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/datefield/" class="sidebar-link">
+          DateField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/datetimefield/" class="sidebar-link">
+          DatetimeField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/deletecardpayload/" class="sidebar-link">
+          DeleteCardPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/deletecommentpayload/" class="sidebar-link">
+          DeleteCommentPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/deletefieldconditionpayload/" class="sidebar-link">
+          DeleteFieldConditionPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/deleteinboxemailpayload/" class="sidebar-link">
+          DeleteInboxEmailPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/deletelabelpayload/" class="sidebar-link">
+          DeleteLabelPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/deleteorganizationpayload/" class="sidebar-link">
+          DeleteOrganizationPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/deletephasefieldpayload/" class="sidebar-link">
+          DeletePhaseFieldPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/deletephasepayload/" class="sidebar-link">
+          DeletePhasePayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/deletepipepayload/" class="sidebar-link">
+          DeletePipePayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/deletepiperelationpayload/" class="sidebar-link">
+          DeletePipeRelationPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/deletetablefieldpayload/" class="sidebar-link">
+          DeleteTableFieldPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/deletetablepayload/" class="sidebar-link">
+          DeleteTablePayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/deletetablerecordpayload/" class="sidebar-link">
+          DeleteTableRecordPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/deletetablerelationpayload/" class="sidebar-link">
+          DeleteTableRelationPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/deletewebhookpayload/" class="sidebar-link">
+          DeleteWebhookPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/duedatefield/" class="sidebar-link">
+          DueDateField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/emailattachment/" class="sidebar-link">
+          EmailAttachment
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/emailfield/" class="sidebar-link">
+          EmailField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/errors/" class="sidebar-link">
+          Errors
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/fieldcondition/" class="sidebar-link">
+          FieldCondition
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/fieldconditionaction/" class="sidebar-link">
+          FieldConditionAction
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/fieldlabel/" class="sidebar-link">
+          FieldLabel
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/fieldmap/" class="sidebar-link">
+          FieldMap
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/idfield/" class="sidebar-link">
+          IdField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/improvement/" class="sidebar-link">
+          Improvement
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/improvementsetting/" class="sidebar-link">
+          ImprovementSetting
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/inboxemail/" class="sidebar-link">
+          InboxEmail
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/invitememberspayload/" class="sidebar-link">
+          InviteMembersPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/label/" class="sidebar-link">
+          Label
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/labelfield/" class="sidebar-link">
+          LabelField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/longtextfield/" class="sidebar-link">
+          LongTextField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/member/" class="sidebar-link">
+          Member
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/minimalfield/" class="sidebar-link">
+          MinimalField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/movecardtophasepayload/" class="sidebar-link">
+          MoveCardToPhasePayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/numberfield/" class="sidebar-link">
+          NumberField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/organization/" class="sidebar-link">
+          Organization
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/pageinfo/" class="sidebar-link">
+          PageInfo
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/phase/" class="sidebar-link">
+          Phase
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/phasedetail/" class="sidebar-link">
+          PhaseDetail
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/phasefield/" class="sidebar-link">
+          PhaseField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/phonefield/" class="sidebar-link">
+          PhoneField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/pipe/" class="sidebar-link">
+          Pipe
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/piperelation/" class="sidebar-link">
+          PipeRelation
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/pipetemplate/" class="sidebar-link">
+          PipeTemplate
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/platformapp/" class="sidebar-link">
+          PlatformApp
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/publiccard/" class="sidebar-link">
+          PublicCard
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/publicformsettings/" class="sidebar-link">
+          PublicFormSettings
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/publicpipe/" class="sidebar-link">
+          PublicPipe
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/publicrepoitem/" class="sidebar-link">
+          PublicRepoItem
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/publictable/" class="sidebar-link">
+          PublicTable
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/publictablerecord/" class="sidebar-link">
+          PublicTableRecord
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/publictablerecordconnection/" class="sidebar-link">
+          PublicTableRecordConnection
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/publictablerecordedge/" class="sidebar-link">
+          PublicTableRecordEdge
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/publicuser/" class="sidebar-link">
+          PublicUser
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/radiohorizontalfield/" class="sidebar-link">
+          RadioHorizontalField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/radioverticalfield/" class="sidebar-link">
+          RadioVerticalField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/recordsimportation/" class="sidebar-link">
+          RecordsImportation
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/recordsimporterpayload/" class="sidebar-link">
+          RecordsImporterPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/repoitemtypesconnection/" class="sidebar-link">
+          RepoItemTypesConnection
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/repoitemtypesedge/" class="sidebar-link">
+          RepoItemTypesEdge
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/repopreference/" class="sidebar-link">
+          RepoPreference
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/selectfield/" class="sidebar-link">
+          SelectField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/sendinboxemailpayload/" class="sidebar-link">
+          SendInboxEmailPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/setdismissedimprovementpayload/" class="sidebar-link">
+          SetDismissedImprovementPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/setimprovementasreadpayload/" class="sidebar-link">
+          SetImprovementAsReadPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/setrolepayload/" class="sidebar-link">
+          SetRolePayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/setrolespayload/" class="sidebar-link">
+          SetRolesPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/setsummaryattributespayload/" class="sidebar-link">
+          SetSummaryAttributesPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/settablefieldorderpayload/" class="sidebar-link">
+          SetTableFieldOrderPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/settablerecordfieldvaluepayload/" class="sidebar-link">
+          SetTableRecordFieldValuePayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/shorttextfield/" class="sidebar-link">
+          ShortTextField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/statementfield/" class="sidebar-link">
+          StatementField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/summary/" class="sidebar-link">
+          Summary
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/summaryattribute/" class="sidebar-link">
+          SummaryAttribute
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/summarygroup/" class="sidebar-link">
+          SummaryGroup
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/summaryoption/" class="sidebar-link">
+          SummaryOption
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/table/" class="sidebar-link">
+          Table
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/tableconnection/" class="sidebar-link">
+          TableConnection
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/tableedge/" class="sidebar-link">
+          TableEdge
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/tablefield/" class="sidebar-link">
+          TableField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/tablepermission/" class="sidebar-link">
+          TablePermission
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/tablerecord/" class="sidebar-link">
+          TableRecord
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/tablerecordconnection/" class="sidebar-link">
+          TableRecordConnection
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/tablerecordedge/" class="sidebar-link">
+          TableRecordEdge
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/tablerecordfield/" class="sidebar-link">
+          TableRecordField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/tablerecordform/" class="sidebar-link">
+          TableRecordForm
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/tablerecordrelation/" class="sidebar-link">
+          TableRecordRelation
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/tablerecordstatus/" class="sidebar-link">
+          TableRecordStatus
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/tablerecordwithcountconnection/" class="sidebar-link">
+          TableRecordWithCountConnection
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/tablerelation/" class="sidebar-link">
+          TableRelation
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/timefield/" class="sidebar-link">
+          TimeField
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/updatecardfieldpayload/" class="sidebar-link">
+          UpdateCardFieldPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/updatecardpayload/" class="sidebar-link">
+          UpdateCardPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/updatecommentpayload/" class="sidebar-link">
+          UpdateCommentPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/updatefieldconditionpayload/" class="sidebar-link">
+          UpdateFieldConditionPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/updatelabelpayload/" class="sidebar-link">
+          UpdateLabelPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/updateorganizationpayload/" class="sidebar-link">
+          UpdateOrganizationPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/updatephasefieldpayload/" class="sidebar-link">
+          UpdatePhaseFieldPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/updatephasepayload/" class="sidebar-link">
+          UpdatePhasePayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/updatepipepayload/" class="sidebar-link">
+          UpdatePipePayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/updatepiperelationpayload/" class="sidebar-link">
+          UpdatePipeRelationPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/updatetablefieldpayload/" class="sidebar-link">
+          UpdateTableFieldPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/updatetablepayload/" class="sidebar-link">
+          UpdateTablePayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/updatetablerecordpayload/" class="sidebar-link">
+          UpdateTableRecordPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/updatetablerelationpayload/" class="sidebar-link">
+          UpdateTableRelationPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/updatewebhookpayload/" class="sidebar-link">
+          UpdateWebhookPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/user/" class="sidebar-link">
+          User
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/userpreference/" class="sidebar-link">
+          UserPreference
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/webhook/" class="sidebar-link">
+          Webhook
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/__directive/" class="sidebar-link">
+          __Directive
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/__enumvalue/" class="sidebar-link">
+          __EnumValue
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/__field/" class="sidebar-link">
+          __Field
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/__inputvalue/" class="sidebar-link">
+          __InputValue
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/__schema/" class="sidebar-link">
+          __Schema
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/__type/" class="sidebar-link">
+          __Type
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/cardlateness/" class="sidebar-link">
+          cardLateness
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/createfieldconditionpayload/" class="sidebar-link">
+          createFieldConditionPayload
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/graphql_docs/object/setfieldconditionorderpayload/" class="sidebar-link">
+          setFieldConditionOrderPayload
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+
+  <li>
+    <p><a href="/graphql_docs/operation/mutation">Mutations</a></p>
+    <ul class="menu-root">
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/cardsimporter/" class="sidebar-link">
+          cardsImporter
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/clonepipes/" class="sidebar-link">
+          clonePipes
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/createcard/" class="sidebar-link">
+          createCard
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/createcardrelation/" class="sidebar-link">
+          createCardRelation
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/createcomment/" class="sidebar-link">
+          createComment
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/createfieldcondition/" class="sidebar-link">
+          createFieldCondition
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/createinboxemail/" class="sidebar-link">
+          createInboxEmail
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/createlabel/" class="sidebar-link">
+          createLabel
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/createorganization/" class="sidebar-link">
+          createOrganization
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/createphase/" class="sidebar-link">
+          createPhase
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/createphasefield/" class="sidebar-link">
+          createPhaseField
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/createpipe/" class="sidebar-link">
+          createPipe
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/createpiperelation/" class="sidebar-link">
+          createPipeRelation
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/createpresignedurl/" class="sidebar-link">
+          createPresignedUrl
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/createtable/" class="sidebar-link">
+          createTable
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/createtablefield/" class="sidebar-link">
+          createTableField
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/createtablerecord/" class="sidebar-link">
+          createTableRecord
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/createtablerecordinrestrictedtable/" class="sidebar-link">
+          createTableRecordInRestrictedTable
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/createtablerelation/" class="sidebar-link">
+          createTableRelation
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/createwebhook/" class="sidebar-link">
+          createWebhook
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/deletecard/" class="sidebar-link">
+          deleteCard
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/deletecomment/" class="sidebar-link">
+          deleteComment
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/deletefieldcondition/" class="sidebar-link">
+          deleteFieldCondition
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/deleteinboxemail/" class="sidebar-link">
+          deleteInboxEmail
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/deletelabel/" class="sidebar-link">
+          deleteLabel
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/deleteorganization/" class="sidebar-link">
+          deleteOrganization
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/deletephase/" class="sidebar-link">
+          deletePhase
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/deletephasefield/" class="sidebar-link">
+          deletePhaseField
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/deletepipe/" class="sidebar-link">
+          deletePipe
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/deletepiperelation/" class="sidebar-link">
+          deletePipeRelation
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/deletetable/" class="sidebar-link">
+          deleteTable
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/deletetablefield/" class="sidebar-link">
+          deleteTableField
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/deletetablerecord/" class="sidebar-link">
+          deleteTableRecord
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/deletetablerelation/" class="sidebar-link">
+          deleteTableRelation
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/deletewebhook/" class="sidebar-link">
+          deleteWebhook
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/invitemembers/" class="sidebar-link">
+          inviteMembers
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/movecardtophase/" class="sidebar-link">
+          moveCardToPhase
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/recordsimporter/" class="sidebar-link">
+          recordsImporter
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/sendinboxemail/" class="sidebar-link">
+          sendInboxEmail
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/setdismissedimprovement/" class="sidebar-link">
+          setDismissedImprovement
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/setfieldconditionorder/" class="sidebar-link">
+          setFieldConditionOrder
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/setimprovementasread/" class="sidebar-link">
+          setImprovementAsRead
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/setrole/" class="sidebar-link">
+          setRole
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/setroles/" class="sidebar-link">
+          setRoles
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/setsummaryattributes/" class="sidebar-link">
+          setSummaryAttributes
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/settablefieldorder/" class="sidebar-link">
+          setTableFieldOrder
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/settablerecordfieldvalue/" class="sidebar-link">
+          setTableRecordFieldValue
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/updatecard/" class="sidebar-link">
+          updateCard
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/updatecardfield/" class="sidebar-link">
+          updateCardField
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/updatecomment/" class="sidebar-link">
+          updateComment
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/updatefieldcondition/" class="sidebar-link">
+          updateFieldCondition
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/updatelabel/" class="sidebar-link">
+          updateLabel
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/updateorganization/" class="sidebar-link">
+          updateOrganization
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/updatephase/" class="sidebar-link">
+          updatePhase
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/updatephasefield/" class="sidebar-link">
+          updatePhaseField
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/updatepipe/" class="sidebar-link">
+          updatePipe
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/updatepiperelation/" class="sidebar-link">
+          updatePipeRelation
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/updatetable/" class="sidebar-link">
+          updateTable
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/updatetablefield/" class="sidebar-link">
+          updateTableField
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/updatetablerecord/" class="sidebar-link">
+          updateTableRecord
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/updatetablerelation/" class="sidebar-link">
+          updateTableRelation
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/mutation/updatewebhook/" class="sidebar-link">
+          updateWebhook
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+
+  <li>
+    <p><a href="/graphql_docs/interface">Interfaces</a></p>
+    <ul class="menu-root">
+      
+        
+        <li>
+          <a href="/graphql_docs/interface/fieldtype/" class="sidebar-link">
+            FieldType
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/graphql_docs/interface/genericfield/" class="sidebar-link">
+            GenericField
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/graphql_docs/interface/minimalcardfieldvalueinterface/" class="sidebar-link">
+            MinimalCardFieldValueInterface
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/graphql_docs/interface/minimalcardinterface/" class="sidebar-link">
+            MinimalCardInterface
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/graphql_docs/interface/minimalfieldinterface/" class="sidebar-link">
+            MinimalFieldInterface
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/graphql_docs/interface/minimalphaseinterface/" class="sidebar-link">
+            MinimalPhaseInterface
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/graphql_docs/interface/publicrepogqlinterface/" class="sidebar-link">
+            PublicRepoGQLInterface
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/graphql_docs/interface/publicrepoiteminterface/" class="sidebar-link">
+            PublicRepoItemInterface
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/graphql_docs/interface/repo/" class="sidebar-link">
+            Repo
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/graphql_docs/interface/repoconnection/" class="sidebar-link">
+            RepoConnection
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/graphql_docs/interface/repoitemfieldgqlinterface/" class="sidebar-link">
+            RepoItemFieldGQLInterface
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/graphql_docs/interface/repoitemformgqlinterface/" class="sidebar-link">
+            RepoItemFormGQLInterface
+          </a>
+        </li>
+      
+        
+        <li>
+          <a href="/graphql_docs/interface/repoitemsimportationgqlinterface/" class="sidebar-link">
+            RepoItemsImportationGQLInterface
+          </a>
+        </li>
+      
+    </ul>
+  </li>
+
+  <li>
+    <p><a href="/graphql_docs/enum">Enums</a></p>
+    <ul class="menu-root">
+      
+      
+      <li>
+        <a href="/graphql_docs/enum/advancedsearchoperators/" class="sidebar-link">
+          AdvancedSearchOperators
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/enum/conditionfieldactions/" class="sidebar-link">
+          ConditionFieldActions
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/enum/tableauthorization/" class="sidebar-link">
+          TableAuthorization
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/enum/__directivelocation/" class="sidebar-link">
+          __DirectiveLocation
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/enum/__typekind/" class="sidebar-link">
+          __TypeKind
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+
+  <li>
+    <p><a href="/graphql_docs/union">Unions</a></p>
+    <ul class="menu-root">
+      
+      
+      <li>
+        <a href="/graphql_docs/union/autofillfieldunion/" class="sidebar-link">
+          AutoFillFieldUnion
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/union/publicrepoitemtypes/" class="sidebar-link">
+          PublicRepoItemTypes
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/union/publicrepounion/" class="sidebar-link">
+          PublicRepoUnion
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/union/repoitemfieldstypes/" class="sidebar-link">
+          RepoItemFieldsTypes
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/union/repoitemformunion/" class="sidebar-link">
+          RepoItemFormUnion
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/union/repoitemtypes/" class="sidebar-link">
+          RepoItemTypes
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/union/repotypes/" class="sidebar-link">
+          RepoTypes
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+
+  <li>
+    <p><a href="/graphql_docs/input_object">Input Objects</a></p>
+    <ul class="menu-root">
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/advancedsearch/" class="sidebar-link">
+          AdvancedSearch
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/cardsearch/" class="sidebar-link">
+          CardSearch
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/cardsimporterinput/" class="sidebar-link">
+          CardsImporterInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/clonepipesinput/" class="sidebar-link">
+          ClonePipesInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/conditionexpressioninput/" class="sidebar-link">
+          ConditionExpressionInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/conditioninput/" class="sidebar-link">
+          ConditionInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/createcardinput/" class="sidebar-link">
+          CreateCardInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/createcardrelationinput/" class="sidebar-link">
+          CreateCardRelationInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/createcommentinput/" class="sidebar-link">
+          CreateCommentInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/createinboxemailinput/" class="sidebar-link">
+          CreateInboxEmailInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/createlabelinput/" class="sidebar-link">
+          CreateLabelInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/createorganizationinput/" class="sidebar-link">
+          CreateOrganizationInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/createphasefieldinput/" class="sidebar-link">
+          CreatePhaseFieldInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/createphaseinput/" class="sidebar-link">
+          CreatePhaseInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/createpipeinput/" class="sidebar-link">
+          CreatePipeInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/createpiperelationinput/" class="sidebar-link">
+          CreatePipeRelationInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/createpresignedurlinput/" class="sidebar-link">
+          CreatePresignedUrlInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/createtablefieldinput/" class="sidebar-link">
+          CreateTableFieldInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/createtableinput/" class="sidebar-link">
+          CreateTableInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/createtablerecordinrestrictedtableinput/" class="sidebar-link">
+          CreateTableRecordInRestrictedTableInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/createtablerecordinput/" class="sidebar-link">
+          CreateTableRecordInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/createtablerelationinput/" class="sidebar-link">
+          CreateTableRelationInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/createwebhookinput/" class="sidebar-link">
+          CreateWebhookInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/deletecardinput/" class="sidebar-link">
+          DeleteCardInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/deletecommentinput/" class="sidebar-link">
+          DeleteCommentInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/deletefieldconditioninput/" class="sidebar-link">
+          DeleteFieldConditionInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/deleteinboxemailinput/" class="sidebar-link">
+          DeleteInboxEmailInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/deletelabelinput/" class="sidebar-link">
+          DeleteLabelInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/deleteorganizationinput/" class="sidebar-link">
+          DeleteOrganizationInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/deletephasefieldinput/" class="sidebar-link">
+          DeletePhaseFieldInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/deletephaseinput/" class="sidebar-link">
+          DeletePhaseInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/deletepipeinput/" class="sidebar-link">
+          DeletePipeInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/deletepiperelationinput/" class="sidebar-link">
+          DeletePipeRelationInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/deletetablefieldinput/" class="sidebar-link">
+          DeleteTableFieldInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/deletetableinput/" class="sidebar-link">
+          DeleteTableInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/deletetablerecordinput/" class="sidebar-link">
+          DeleteTableRecordInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/deletetablerelationinput/" class="sidebar-link">
+          DeleteTableRelationInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/deletewebhookinput/" class="sidebar-link">
+          DeleteWebhookInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/emailattachmentinput/" class="sidebar-link">
+          EmailAttachmentInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/emailtoinviteinput/" class="sidebar-link">
+          EmailToInviteInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/fieldconditionactioninput/" class="sidebar-link">
+          FieldConditionActionInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/fieldmapinput/" class="sidebar-link">
+          FieldMapInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/fieldvalueinput/" class="sidebar-link">
+          FieldValueInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/fieldvaluescolumnsinput/" class="sidebar-link">
+          FieldValuesColumnsInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/filledfield/" class="sidebar-link">
+          FilledField
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/invitemembersinput/" class="sidebar-link">
+          InviteMembersInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/labelinput/" class="sidebar-link">
+          LabelInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/memberinput/" class="sidebar-link">
+          MemberInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/movecardtophaseinput/" class="sidebar-link">
+          MoveCardToPhaseInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/phasefieldinput/" class="sidebar-link">
+          PhaseFieldInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/phaseinput/" class="sidebar-link">
+          PhaseInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/publicformsettingsinput/" class="sidebar-link">
+          PublicFormSettingsInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/recordsimporterinput/" class="sidebar-link">
+          RecordsImporterInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/referenceconnectorfieldinput/" class="sidebar-link">
+          ReferenceConnectorFieldInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/repoitemfilter/" class="sidebar-link">
+          RepoItemFilter
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/repopreferenceinput/" class="sidebar-link">
+          RepoPreferenceInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/sendinboxemailinput/" class="sidebar-link">
+          SendInboxEmailInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/setdismissedimprovementinput/" class="sidebar-link">
+          SetDismissedImprovementInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/setimprovementasreadinput/" class="sidebar-link">
+          SetImprovementAsReadInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/setroleinput/" class="sidebar-link">
+          SetRoleInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/setrolesinput/" class="sidebar-link">
+          SetRolesInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/setsummaryattributesinput/" class="sidebar-link">
+          SetSummaryAttributesInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/settablefieldorderinput/" class="sidebar-link">
+          SetTableFieldOrderInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/settablerecordfieldvalueinput/" class="sidebar-link">
+          SetTableRecordFieldValueInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/tablerecordsearch/" class="sidebar-link">
+          TableRecordSearch
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/updatecardfieldinput/" class="sidebar-link">
+          UpdateCardFieldInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/updatecardinput/" class="sidebar-link">
+          UpdateCardInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/updatecommentinput/" class="sidebar-link">
+          UpdateCommentInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/updatefieldconditioninput/" class="sidebar-link">
+          UpdateFieldConditionInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/updatelabelinput/" class="sidebar-link">
+          UpdateLabelInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/updateorganizationinput/" class="sidebar-link">
+          UpdateOrganizationInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/updatephasefieldinput/" class="sidebar-link">
+          UpdatePhaseFieldInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/updatephaseinput/" class="sidebar-link">
+          UpdatePhaseInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/updatepipeinput/" class="sidebar-link">
+          UpdatePipeInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/updatepiperelationinput/" class="sidebar-link">
+          UpdatePipeRelationInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/updatetablefieldinput/" class="sidebar-link">
+          UpdateTableFieldInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/updatetableinput/" class="sidebar-link">
+          UpdateTableInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/updatetablerecordinput/" class="sidebar-link">
+          UpdateTableRecordInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/updatetablerelationinput/" class="sidebar-link">
+          UpdateTableRelationInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/updatewebhookinput/" class="sidebar-link">
+          UpdateWebhookInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/createfieldconditioninput/" class="sidebar-link">
+          createFieldConditionInput
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/input_object/setfieldconditionorderinput/" class="sidebar-link">
+          setFieldConditionOrderInput
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+
+  <li>
+    <p><a href="/graphql_docs/scalar">Scalars</a></p>
+    <ul class="menu-root">
+      
+      
+      <li>
+        <a href="/graphql_docs/scalar/boolean/" class="sidebar-link">
+          Boolean
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/scalar/date/" class="sidebar-link">
+          Date
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/scalar/datetime/" class="sidebar-link">
+          DateTime
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/scalar/float/" class="sidebar-link">
+          Float
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/scalar/id/" class="sidebar-link">
+          ID
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/scalar/int/" class="sidebar-link">
+          Int
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/scalar/json/" class="sidebar-link">
+          Json
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/scalar/string/" class="sidebar-link">
+          String
+        </a>
+      </li>
+      
+      
+      <li>
+        <a href="/graphql_docs/scalar/undefinedinput/" class="sidebar-link">
+          UndefinedInput
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+      </div>
+      <div id="content">
+
+        <h1>
+<a id="createtablefieldinput" class="anchor" href="#createtablefieldinput" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>CreateTableFieldInput</h1>
+<p>Autogenerated input type of CreateTableField</p>
+<h2>
+<a id="input-fields" class="anchor" href="#input-fields" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Input Fields</h2>
+<div class="field-entry ">
+  <span id="allchildrenmustbedonetofinishparent" class="field-name anchored">allChildrenMustBeDoneToFinishParent (<code><a href="/graphql_docs/scalar/boolean">Boolean</a></code>)</span>
+  <div class="description-wrapper">
+   <p>Connection Field: Whether all children must be done to finish the parent</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="canconnectexisting" class="field-name anchored">canConnectExisting (<code><a href="/graphql_docs/scalar/boolean">Boolean</a></code>)</span>
+  <div class="description-wrapper">
+   <p>Connection Field: Whether can connect with existing items</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="canconnectmultiples" class="field-name anchored">canConnectMultiples (<code><a href="/graphql_docs/scalar/boolean">Boolean</a></code>)</span>
+  <div class="description-wrapper">
+   <p>Connection Field: Whether is possible to connect with multiple items</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="cancreatenewconnected" class="field-name anchored">canCreateNewConnected (<code><a href="/graphql_docs/scalar/boolean">Boolean</a></code>)</span>
+  <div class="description-wrapper">
+   <p>Connection Field: Whether is possible to create new connected items</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="childmustexisttofinishparent" class="field-name anchored">childMustExistToFinishParent (<code><a href="/graphql_docs/scalar/boolean">Boolean</a></code>)</span>
+  <div class="description-wrapper">
+   <p>Connection Field: Whether a child must exist to finish the parent</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="clientmutationid" class="field-name anchored">clientMutationId (<code><a href="/graphql_docs/scalar/string">String</a></code>)</span>
+  <div class="description-wrapper">
+   <p>A unique identifier for the client performing the mutation.</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="connectedrepoid" class="field-name anchored">connectedRepoId (<code><a href="/graphql_docs/scalar/id">ID</a></code>)</span>
+  <div class="description-wrapper">
+   <p>Connection Field: The Repo ID</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="custom_validation" class="field-name anchored">custom_validation (<code><a href="/graphql_docs/scalar/string">String</a></code>)</span>
+  <div class="description-wrapper">
+   <p>The regex used to validate the field's value</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="description" class="field-name anchored">description (<code><a href="/graphql_docs/scalar/string">String</a></code>)</span>
+  <div class="description-wrapper">
+   <p>The field description</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="help" class="field-name anchored">help (<code><a href="/graphql_docs/scalar/string">String</a></code>)</span>
+  <div class="description-wrapper">
+   <p>The field help text</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="label" class="field-name anchored">label (<code><a href="/graphql_docs/scalar/string">String!</a></code>)</span>
+  <div class="description-wrapper">
+   <p>The field title</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="minimal_view" class="field-name anchored">minimal_view (<code><a href="/graphql_docs/scalar/boolean">Boolean</a></code>)</span>
+  <div class="description-wrapper">
+   <p>Whether the field is minimal</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="options" class="field-name anchored">options (<code><a href="/graphql_docs/scalar/string">[String]</a></code>)</span>
+  <div class="description-wrapper">
+   <p>The field options</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="required" class="field-name anchored">required (<code><a href="/graphql_docs/scalar/boolean">Boolean</a></code>)</span>
+  <div class="description-wrapper">
+   <p>Whether the field is required</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="table_id" class="field-name anchored">table_id (<code><a href="/graphql_docs/scalar/id">ID!</a></code>)</span>
+  <div class="description-wrapper">
+   <p>The table ID</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="type" class="field-name anchored">type (<code><a href="/graphql_docs/scalar/id">ID!</a></code>)</span>
+  <div class="description-wrapper">
+   <p>The field type</p>
+<p>Valid options:</p>
+<ul>
+<li>assignee_select</li>
+<li>attachment</li>
+<li>checklist_horizontal</li>
+<li>checklist_vertical</li>
+<li>cnpj</li>
+<li>connector</li>
+<li>cpf</li>
+<li>currency</li>
+<li>date</li>
+<li>datetime</li>
+<li>due_date</li>
+<li>email</li>
+<li>id</li>
+<li>label_select</li>
+<li>long_text</li>
+<li>number</li>
+<li>phone</li>
+<li>radio_horizontal</li>
+<li>radio_vertical</li>
+<li>select</li>
+<li>short_text</li>
+<li>statement</li>
+<li>time</li>
+</ul>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="unique" class="field-name anchored">unique (<code><a href="/graphql_docs/scalar/boolean">Boolean</a></code>)</span>
+  <div class="description-wrapper">
+   <p>Whether the field value must be unique</p>
+  </div>
+</div>
+
+      </div>
+
+      <!-- mobile only -->
+      <div id="mobile-header">
+        <a class="menu-button"></a>
+        <a class="logo" href="/graphql_docs">
+
+        </a>
+      </div>
+      <div id="mobile-shade"></div>
+
+    </div>
+
+  </body>
+</html>
